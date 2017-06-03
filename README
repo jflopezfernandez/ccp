@@ -1,0 +1,7 @@
+This is my 9,834,482,386,485th attempt to build a mathematical library capable of solving industrial or academic level problems with the compiled speed of C/C++ and optimized assembly. I'm starting this project from scratch because I want to make sure that it is completely cross-compatible between Windows and Linux. My current development environments are Windows 10 and Lubuntu 17.04.
+
+Note: When recompiling source for windows, you'll have to use the following command:
+
+make -B
+
+The gitignore file does not currently ignore the file extension-less executable file compiled under linux so you have to recompile from scratch to build a Windows compatible executable.
