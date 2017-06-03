@@ -1,4 +1,6 @@
-This is my 9,834,482,386,485th attempt to build a mathematical library capable of solving industrial or academic level problems with the compiled speed of C/C++ and optimized assembly. I'm starting this project from scratch because I want to make sure that it is completely cross-compatible between Windows and Linux. My current development environments are Windows 10 and Lubuntu 17.04.
+This is my 9,834,482,386,485th attempt to build a mathematical library capable of solving industrial or academic level problems with the compiled speed of C/C++ and optimized assembly. I've had to restart several times because I've been replanning the way I set up the project. I've vascillated between pure C and C++ but I've decided that the stronger type checking of C++, in addition to its compilation-time resolution of constexpr functions and metaprogramming flexibility all add too much power to pass up, especially for a project this ambitious. I'm starting this project from scratch because I want to make sure that it is completely cross-compatible between Windows and Linux. My current development environments are Windows 10 and Lubuntu 17.04.
+
+I'm currently in the process of setting up the data structures necessary for numerical processing, including multiple precision arithmetic and symbolic constant compatibility.
 
 Note: When recompiling source for windows, you'll have to use the following command:
 
