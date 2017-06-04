@@ -1,19 +1,21 @@
 
 #include "includes/Main.hpp"
 
-#define MAX(a,b) ((a > b) ? a : b)
-#define MIN(a,b) ((a < b) ? a : b)
-
-/** Testing */
-#define TEST_ISEQUAL(a,b) ((a == b) ? "TRUE" : "FALSE")
-#define TEST_ISNULLPTR(a) ((a == nullptr) ? printf("[Error] Null pointer passed in! (%s - func:%s line:%i)\n", __FILE__, __func__, __LINE__) : printf("[TEST OKAY] (%s - func:%s line:%i) \n", __FILE__, __func__, __LINE__))
+template <typename T>
+T minimum(const T& lhs, const T& rhs) {
+	return (lhs < rhs ? lhs : rhs);
+}
 
 
 int main()
 {
 	initializeProgram();
 	
-
+	double a, b;
+	scanf("%lf %lf", &a, &b);
+	
+	printf("min(%lf,%lf) = %lf\n", a, b, minimum(a,b));
+	
 	
 	terminateProgram();
 	return EXIT_SUCCESS;
