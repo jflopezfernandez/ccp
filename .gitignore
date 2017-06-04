@@ -33,3 +33,6 @@
 
 # Folders
 src/cgreen-master/
+
+# Linux Executables
+/test
