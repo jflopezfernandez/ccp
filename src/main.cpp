@@ -6,16 +6,15 @@ int main()
 {
 	initializeProgram();
 	
-	std::fstream fs;
-	fs.open("test.dat");
+	auto a = std::make_unique<int[]>(10);
 	
-	if (fs.is_open()) {
-		fs << "testing...\n";
-	} else {
-		std::cerr << "[Error] Could not open file...\n";
+	for (int i = 0; i < 10; ++i) {
+		a[i] = i + 1;
+		printf("%i ", a[i]);
 	}
 	
-	fs.close();
+	printf("\n");
 	
+	terminateProgram();
 	return EXIT_SUCCESS;
 }

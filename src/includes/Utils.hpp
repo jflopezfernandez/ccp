@@ -17,8 +17,11 @@ void print(T firstArg, Types... args) {
 
 
 void clearScreen();
+void printCompilationDate();
+void printCPPVersion();
 void printLines(int n);
 
 void initializeProgram();
+void terminateProgram();
 
 #endif /* _UTILS_HPP */

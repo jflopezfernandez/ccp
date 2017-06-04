@@ -6,6 +6,16 @@ void clearScreen() {
 }
 
 
+void printCompilationDate() {
+	printf("Compiled on %s, at %s\n", __DATE__, __TIME__);
+}
+
+
+void printCPPVersion() {
+	printf("C++ Standard: %li\n", __cplusplus);
+}
+
+
 void printLines(int n) {
 	printf("\n");
 	
@@ -16,5 +26,12 @@ void printLines(int n) {
 
 void initializeProgram() {
 	clearScreen();
+	printCompilationDate();
+	printCPPVersion();
+	printLines(2);
+}
+
+
+void terminateProgram() {
 	printLines(2);
 }
