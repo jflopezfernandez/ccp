@@ -4,7 +4,7 @@ CFLAGS := -std=c++17 -Wall -Wextra
 PROGRAM := test
 
 SRCS := $(wildcard *.cpp)
-OBJS := $(patsubst $.cpp,%.o,$(wildcard *.cpp))
+OBJS := $(patsubst %.cpp,%.o,$(wildcard *.cpp))
 
 $(PROGRAM): $(OBJS)
 	$(CPP) $(CFLAGS) -o $(PROGRAM) $(OBJS)
